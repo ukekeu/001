@@ -1,0 +1,347 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>主模块编码</title>
+</head>
+
+<body>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="9%">编码：B</td>
+    <td width="26%">主模块名称：基本资料</td>
+    <td width="40%">主模块访问地址：basic/index.htm</td>
+  </tr>
+  <tr>
+    <td width="75%" colspan="3">
+      <table border="1" width="100%">
+        <tr>
+          <td width="50%" align="center">子模块名称</td>
+          <td width="50%" align="center">子模块访问地址</td>
+        </tr>
+        <tr>
+          <td width="50%">添加楼盘资料</td>
+          <td width="50%">basic/SectionInput.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">添加楼盘图片</td>
+          <td width="50%">basic/SectionPicInput.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">定义房号</td>
+          <td width="50%">basic/RoomCodeInput.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">添加房间资料</td>
+          <td width="50%">basic/RoomCode.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">查找楼盘资料</td>
+          <td width="50%">basic/SectionView.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">查找房间资料</td>
+          <td width="50%">basic/RoomView.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">房间定价</td>
+          <td width="50%">sale/RoomCode.jsp?para=dj</td>
+        </tr>
+        <tr>
+          <td width="50%">房间调价</td>
+          <td width="50%">sale/RoomCode.jsp?para=tj</td>
+        </tr>
+        <tr>
+          <td width="50%">付款方式设定</td>
+          <td width="50%">sale/PaymentList.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">常用代码定义</td>
+          <td width="50%">sys/codeset.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">购房收费标准</td>
+          <td width="50%">sys/Changescodeset.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">　</td>
+          <td width="50%">　</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="9%">编码：C</td>
+    <td width="26%">主模块名称： 客户管理</td>
+    <td width="40%">主模块访问地址：customter/index.htm</td>
+  </tr>
+  <tr>
+    <td width="75%" colspan="3">
+      <table border="1" width="100%">
+        <tr>
+          <td width="50%">登记客户资料</td>
+          <td width="50%">customter/customerin.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">客房跟踪记录</td>
+          <td width="50%">customter/CusFeedBack.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">客户需求分析</td>
+          <td width="50%">customter/cusFindcount.jsp?para=demand</td>
+        </tr>
+        <tr>
+          <td width="50%">成交客户分析</td>
+          <td width="50%">customter/cusFindcount.jsp?para=cj</td>
+        </tr>
+        <tr>
+          <td width="50%">客户明细表</td>
+          <td width="50%">customter/CusFindView.jsp?condtion=cusmx</td>
+        </tr>
+        <tr>
+          <td width="50%">需购客户明细表</td>
+          <td width="50%">customter/CusFindView.jsp?condtion=0</td>
+        </tr>
+        <tr>
+          <td width="50%">认购客户明细表</td>
+          <td width="50%">customter/CusFindView.jsp?condtion=3</td>
+        </tr>
+        <tr>
+          <td width="50%">客户反馈登记</td>
+          <td width="50%">customter/FeedBack.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">客户反馈统计图</td>
+          <td width="50%">customter/FindFeedBackpic.jsp</td>
+        </tr>
+        <tr>
+          <td width="50%">　</td>
+          <td width="50%">　</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="9%">编码：S</td>
+    <td width="26%">主模块名称： 销售管理</td>
+    <td width="40%">主模块访问地址：sale/index.htm</td>
+  </tr>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="50%">临定登记</td>
+    <td width="50%">sale/RoomChooseView.jsp?rgpara=ld</td>
+  </tr>
+  <tr>
+    <td width="50%">认购登记</td>
+    <td width="50%">sale/RoomChooseView.jsp?rgpara=rg</td>
+  </tr>
+  <tr>
+    <td width="50%">认购书明细表</td>
+    <td width="50%">sale/rgsview.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">合同明细表</td>
+    <td width="50%">sale/saleview.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">销售状况表</td>
+    <td width="50%">sale/RoomCode.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">房价对照表</td>
+    <td width="50%">sale/RoomCode.jsp?para=pricedz</td>
+  </tr>
+  <tr>
+    <td width="50%">历史价目表</td>
+    <td width="50%">sale/HistroyPriceList.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">月均销售对比图</td>
+    <td width="50%">sale/saleFindcount.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">换房记录明细表</td>
+    <td width="50%">sale/ChangeList.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">挞订明细表</td>
+    <td width="50%">sale/CancelList.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">合同统计明细表</td>
+    <td width="50%">sale/RoomCode.jsp?para=htmx</td>
+  </tr>
+  <tr>
+    <td width="50%">未售房间统计表</td>
+    <td width="50%">sale/NotSale.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">认购统计明细表</td>
+    <td width="50%">sale/Rgfjqk.jsp?para=rgfjqk</td>
+  </tr>
+  <tr>
+    <td width="50%">月销售统计表</td>
+    <td width="50%">sale/ContractSum.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">自定义报表</td>
+    <td width="50%">sale/ReportSet.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">打印自定义报表(可导入EXCEL)</td>
+    <td width="50%">sale/ReportShow.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">　</td>
+    <td width="50%">　</td>
+  </tr>
+  <tr>
+    <td width="50%">　</td>
+    <td width="50%">　</td>
+  </tr>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="12%">编码：P</td>
+    <td width="22%">主模块名称： 置业计划</td>
+    <td width="41%">主模块访问地址：cortrolcenter/index.htm</td>
+  </tr>
+  <tr>
+    <td width="12%">编码：F</td>
+    <td width="22%">主模块名称： 财务管理</td>
+    <td width="41%">主模块访问地址：finance/index.htm</td>
+  </tr>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="50%">收款情况明细表</td>
+    <td width="50%">finance/FactGatherDetail.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">催款查询(打印通知单)</td>
+    <td width="50%">finance/GatherView.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">佣金统计明细表</td>
+    <td width="50%">finance/YongJinCollect.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">其它计费统计明细表</td>
+    <td width="50%">finance/moneyget.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">代收明细统计表</td>
+    <td width="50%">finance/RepGatherView.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">代收汇总表</td>
+    <td width="50%">finance/RepGatherCollect.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">支取明细统计表</td>
+    <td width="50%">finance/DjGatherInput.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">支取汇总表表</td>
+    <td width="50%">finance/DjGatherCollect.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">　</td>
+    <td width="50%">　</td>
+  </tr>
+  <tr>
+    <td width="50%">　</td>
+    <td width="50%">　</td>
+  </tr>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="75%" colspan="3">　</td>
+  </tr>
+  <tr>
+    <td width="12%">主模块编码：A</td>
+    <td width="22%">主模块名称：售后管理</td>
+    <td width="41%">主模块访问地址：afterservice/index.htm</td>
+  </tr>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="50%">转名登记</td>
+    <td width="50%">afterservice/saleview.jsp?zm=zm</td>
+  </tr>
+  <tr>
+    <td width="50%">转名明细表</td>
+    <td width="50%">afterservice/ZMList.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">签证统计表</td>
+    <td width="50%">afterservice/ContractList.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">　</td>
+    <td width="50%">　</td>
+  </tr>
+  <tr>
+    <td width="50%">交楼通知书</td>
+    <td width="50%">afterservice/JLGL.jsp</td>
+  </tr>
+  <tr>
+    <td width="50%">业主反馈</td>
+    <td width="50%">afterservice/FKCX.jsp</td>
+  </tr>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="75%" colspan="5"><b>常用 代码说明:</b></td>
+  </tr>
+  <tr>
+    <td width="15%">A:户型</td>
+    <td width="15%">B:职位</td>
+    <td width="15%">C：房类</td>
+    <td width="15%">D：朝向</td>
+    <td width="15%">E：信息来源</td>
+  </tr>
+  <tr>
+    <td width="15%">F:关注问题</td>
+    <td width="15%">G：行业</td>
+    <td width="15%">H：交通</td>
+    <td width="15%">I：购房用途</td>
+    <td width="15%">J：家庭结构</td>
+  </tr>
+  <tr>
+    <td width="15%">K：区域</td>
+    <td width="15%">M：学历</td>
+    <td width="15%">Y：客户类型</td>
+    <td width="15%">X：装修标准</td>
+    <td width="15%">O：面积范围</td>
+  </tr>
+  <tr>
+    <td width="15%">P：购房动机</td>
+    <td width="15%">Q：单价范围</td>
+    <td width="15%">R：总价范围</td>
+    <td width="15%">　</td>
+    <td width="15%">　</td>
+  </tr>
+  <tr>
+    <td width="15%">　</td>
+    <td width="15%">　</td>
+    <td width="15%">　</td>
+    <td width="15%">　</td>
+    <td width="15%">　</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

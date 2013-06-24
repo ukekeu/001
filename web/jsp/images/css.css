@@ -1,0 +1,63 @@
+INPUT {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+TEXTAREA {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+UNKNOWN {
+	WIDTH: 100px
+}
+BODY {
+	TABLE-LAYOUT: fixed; SCROLLBAR-FACE-COLOR: #efefef; SCROLLBAR-HIGHLIGHT-COLOR: #000000; SCROLLBAR-SHADOW-COLOR: #000000; WORD-BREAK: break-all; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #efefef; SCROLLBAR-DARKSHADOW-COLOR: #ffffff
+}
+TD {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #000000; LINE-HEIGHT: 20px; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.t1 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 22px
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #b6b6b6; TEXT-DECORATION: none
+}
+A.a1:link {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.a1:visited {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.a1:hover {
+	FONT-SIZE: 14px; COLOR: #ffff00; TEXT-DECORATION: none
+}
+A.a1:active {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.t2 {
+	FONT-SIZE: 16px; LINE-HEIGHT: 25px
+}
+.zdx {
+	FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.bgcolor1 {
+	BACKGROUND-COLOR: #ffd8cf
+}
+.bgcolor2 {
+	BACKGROUND-COLOR: #78ad78
+}
+.bgcolor3 {
+	BACKGROUND-COLOR: #e9f5ea
+}
+.bgcolor4 {
+	BACKGROUND-COLOR: #e7f5e7
+}
+.bgcolor5 {
+	BACKGROUND-COLOR: #e9f5ea
+}

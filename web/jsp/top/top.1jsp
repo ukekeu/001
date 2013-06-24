@@ -1,0 +1,130 @@
+<%@ page contentType="text/html;charset=gb2312" %>
+ <%@ include file="../public_js/checktime.jsp"%>
+ <%@ page language="java" import="java.sql.*" %>
+<jsp:useBean id="setpopedom" scope="session" class="setProperty.setpopedom"/>
+ <jsp:useBean id="ViewBean" scope="page" class="ConnDatabase.SDatabase"/>
+
+ <%@ include file="../public_js/getByteOut.jsp"%>
+<%
+String popedomlist=setpopedom.getPopedomlist();
+
+String operation=(String)session.getAttribute("loginname");
+String logintime=(String)session.getAttribute("statesmess");
+if (popedomlist==null)popedomlist="";
+ 
+//读取上次的登录时间
+String time="";
+String ip="";
+ ResultSet intime=ViewBean.executeQuery("select top 3  indatetime,ip from    WorkingJournalRecord where username='"+operation+"'  order by id desc");
+while (intime.next()){
+  time=intime.getString("indatetime");
+  ip=intime.getString("ip");
+
+}
+intime.close();
+%>
+<script>
+ var text1 = "<%="上次登录时间："+time+",IP:"+ip+",当前登录用户:"+"["+operation+"]" %>";
+ 
+
+ window.status=text1;
+ function infoscroll(seed,looped)
+       {
+                
+			     var text2 = " "; 
+                 var msg=text1+text2;
+                 var putout = " ";
+                 var c = 1;
+
+                 if (looped > 10) 
+                 { window.status="Thanks !"; }
+                 else if (seed > 200) 
+                 {
+                 seed--;
+                 var cmd="infoscroll(" + seed + "," + looped + ")";
+                 timerTwo=window.setTimeout(cmd,200);
+                 }
+                 else if (seed <= 200 && seed > 0) 
+                 {
+                 for (c=0 ; c < seed ; c++) 
+                 { putout+=" "; }
+                 putout+=msg.substring(0,200-seed);    
+                 seed--;
+                 var cmd="infoscroll(" + seed + "," + looped + ")";
+                 window.status=putout;
+                 timerTwo=window.setTimeout(cmd,200);
+                 }
+                 else if (seed <= 0) 
+                 {
+                 if (-seed < msg.length) 
+                 {
+                 putout+=msg.substring(-seed,msg.length);
+                 seed--;
+                 var cmd="infoscroll(" + seed + "," + looped + ")";
+                 window.status=putout;
+                 timerTwo=window.setTimeout(cmd,200); // 100
+                 }
+                 else 
+                 {
+                 window.status=" ";
+                 looped += 1;
+                 var cmd = "infoscroll(200," + looped + ")";
+                 timerTwo=window.setTimeout(cmd,75); // 75
+                 }
+                 }
+                 }
+  // infoscroll(100,1);
+   function out(){
+     if (confirm("确认退出系统吗？"))
+	 window.parent.location='../outSys.jsp'
+   }
+</script>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>菜单</title>
+<style>
+<!--      
+.p1{font-size: 12px;line-height:14pt;}
+.p2{font-size: 12px;line-height:12px;}
+.L1{font-size: 14.8px; font-family: 宋体;line-height:14pt;}
+.L2{font-size: 12px; font-family: 宋体;line-height:14pt;}
+.L3{font-size: 12px; font-family: 宋体;line-height:18pt;}
+a.pblue:link{color: #000080; text-decoration: none}
+.pblue{ color: #000080;}
+.mfei {font-size: 11px;}
+a { color: #666666;text-decoration: none;}
+-->
+</style>
+
+<base target="contents">
+
+</head>
+
+<body topmargin="0" leftmargin="0" >
+<%
+  String para=request.getParameter("para");
+  if (para==null)para="";
+ %>
+ 
+ <table border="0" width=100% cellpadding="0" cellspacing="0"   background="../images/BG.jpg">
+ 
+   <tr height=63>
+    <td width="160"  align="left"> <img   width="800" heigth=66  border=0 hspace=10 
+      src="../images/top_dt1.jpg"></td>
+    <td align="center">&nbsp;</td> 
+
+    <td width="190"   valign="bottom"><a href="javascript:window.parent.main.location='http://<%=request.getServerName() %>:808/crmv9/homepage.asp'"     target=main><img border=0 hspace=10 
+      src="../images/t_4.jpg" title="我的任务提醒"　> </a><a href="#"  onclick="window.open('../help/');return false;"><img src="../images/t_5.jpg" name="Image2"   border="0" alt="弹出帮助窗口"></a></a>&nbsp;<a href="#"  onclick="out();return false;"><img src="../images/t_6.jpg" name="Image4"   border="0"></a></td>
+  </tr>
+</table>
+　
+
+
+</body>
+</html>

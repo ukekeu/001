@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<display-name>U客售楼管理信息系统</display-name>
+	<description>U客软件提供</description>
+
+	<servlet>
+		<servlet-name>snoop</servlet-name>
+		<servlet-class>SnoopServlet</servlet-class>
+		<!-- <init-param> <param-name>foo</param-name> <param-value>bar</param-value> 
+			</init-param> -->
+	</servlet>
+	<servlet>
+		<servlet-name>servletToJsp</servlet-name>
+		<servlet-class>servletToJsp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>snoop</servlet-name>
+		<url-pattern>
+			/snoop
+        </url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>snoop</servlet-name>
+		<url-pattern>
+			*.snp
+        </url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servletToJsp</servlet-name>
+		<url-pattern>
+			/servletToJsp
+        </url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Protected Area</web-resource-name>
+			<!-- Define the context-relative URL(s) to be protected -->
+			<url-pattern>/jsp/security/protected/*</url-pattern>
+			<!-- If you list http methods, only those methods are protected -->
+			<http-method>DELETE</http-method>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+			<http-method>PUT</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<!-- Anyone with one of the listed roles may access this area -->
+			<role-name>tomcat</role-name>
+			<role-name>role1</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<!-- Default login configuration uses BASIC authentication -->
+	<!-- <login-config> <auth-method>BASIC</auth-method> <realm-name>Example 
+		Basic Authentication Area</realm-name> </login-config> -->
+
+	<!-- Form-based login is enabled by default. If you wish to try Basic authentication, 
+		comment out the <login-config> section below and uncomment the one above. -->
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>Example Form-Based Authentication Area</realm-name>
+		<form-login-config>
+			<form-login-page>/jsp/security/login/login.jsp</form-login-page>
+			<form-error-page>/jsp/security/login/error.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+
+	<servlet>
+		<servlet-name>imageServlet</servlet-name>
+		<servlet-class>payRandom.ValidateImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>imageServlet</servlet-name>
+		<url-pattern>/imageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>soft</servlet-name>
+		<servlet-class>test.soft</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>soft</servlet-name>
+		<url-pattern>/soft</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>debugjsp</servlet-name>
+		<servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+		<init-param>
+			<param-name>classdebuginfo</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>debugjsp</servlet-name>
+		<url-pattern>*.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>XFireServlet</servlet-name>
+		<servlet-class>org.codehaus.xfire.transport.http.XFireConfigurableServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>XFireServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>sendSMSServlet</servlet-name>
+		<servlet-class>com.excenon.sms.servlet.SendSMSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sendSMSServlet</servlet-name>
+		<url-pattern>/sendSMSServlet</url-pattern>
+	</servlet-mapping>
+
+	<env-entry>
+		<description>URL for configuring log4j context</description>
+		<env-entry-name>log4j/configuration-resource</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>log4j.xml</env-entry-value>
+	</env-entry>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>common-taglib</taglib-uri>
+			<taglib-location>/WEB-INF/common_taglib.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+</web-app>

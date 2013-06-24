@@ -1,0 +1,38 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title> New Document </title>
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+</head>
+
+<body>
+<input type="text" class="textinput"  name="xdate" value="x1,x2,x3,x4">
+<input type="text" class="textinput"  name="ydate" value="5,6,7,8">
+<input type="text" class="textinput"  name="ylen" value="300">
+<input type="button" class="buttoninput"  onclick="init();">
+<APPLET id="applet1" name="applet1" code="rectangle.class">
+</applet>
+<script language="JavaScript">
+<!--
+function init(){
+  var applet1=document.all.applet1;
+  if(applet1){
+      applet1.width=500;
+	  applet1.heigth=800;
+	  //alert(document.all.xdate.value);
+	  var xdate=document.all.xdate.value;
+	  var ydate=document.all.ydate.value;
+	  var ylen=document.all.ylen.value;
+	  applet1.setParameter("X","Y",xdate,ydate,ylen);
+	  applet1.repaint();
+  }
+ }
+
+ //setTimeout(init,3000);
+//-->
+</script>
+</body>
+</html>

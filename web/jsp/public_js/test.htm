@@ -1,0 +1,57 @@
+
+
+
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META content="text/html; charset=GBK" http-equiv=Content-Type>
+
+<META HTTP-EQUIV="Expires" CONTENT="0">
+
+</HEAD>
+<BODY>
+<script Language="JavaScript" src="calendar.script"></script>
+<script Language="JavaScript" src="iOffice_Popup.js"></script>
+ <form name="todoDetailForm" method="POST" action="todoDetail.do">
+<input type="hidden" name="action" value=""> 
+ <center>
+<table BORDER=0 width="100%" CELLSPACING=0 CELLPADDING=0 ALIGN=center bordercolor="#000000" class="tablefill">
+  <tr>
+    <td width="100%" colspan="4">
+	<br>
+      <p align="center"><font size=3><b>临订登记</b></font></td>
+  </tr>
+  <tr>
+    <td width="50%"  >&nbsp;楼盘名称：</td>  
+    <td width="50%"  >&nbsp;<input type=text name=SecNa  size=10 ></td>
+    <td width="50%"  >&nbsp;区号/座号</td>  
+    <td width="50%"  >&nbsp;<input type=text name=Loft  size=10></td>
+  </tr>
+
+  <tr>
+    <td width="50%"  >&nbsp;栋号：</td>
+    <td width="50%"  >&nbsp;<input type=text name=Build  size=10></td>
+ 
+    <td width="50%"  >&nbsp;房间号：</td>  
+    <td width="50%"  >&nbsp;<input type=text name=RoomNo  size=20></td>
+  </tr>
+  <tr>
+    <td width="50%"  >&nbsp;失效日期：</td>
+    <td width="50%"  >&nbsp;<input type=text name=Date1  size=10><input type=button name=Popu value=".." onClick="fPopUpCalendarDlg(Date1);return false"></td>
+ 
+    <td width="50%"  >&nbsp;临订订金：</td>  
+    <td width="50%"  >&nbsp;<input type=text name=Subscription  size=20></td>
+  </tr>
+  
+  </table>
+  
+  <input type=submit name=save value="确定">
+  <input type=reset name=cancel value="重写">
+  <input type=reset name=del value="删除" onclick="delSeller(RSID);">
+</center>
+
+</form>
+
+ 
+</BODY></HTML>

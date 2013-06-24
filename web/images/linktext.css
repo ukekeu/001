@@ -1,0 +1,132 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #dfdfdf; FONT-WEIGHT: normal; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #dfdfdf; SCROLLBAR-SHADOW-COLOR: #7c7c7c; SCROLLBAR-3DLIGHT-COLOR: #7c7c7c; LINE-HEIGHT: normal; SCROLLBAR-ARROW-COLOR: #7c7c7c; SCROLLBAR-TRACK-COLOR: #ffffff; FONT-STYLE: normal; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; BACKGROUND-COLOR: #ffffff; FONT-VARIANT: normal
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+A {
+	COLOR: #005cc3; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #003b82; TEXT-DECORATION: underline
+}
+TEXTAREA {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+SELECT {
+	FONT: 9pt Verdana
+}
+.button {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.textbox {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; LINE-HEIGHT: normal; FONT-STYLE: normal; HEIGHT: 21px; FONT-VARIANT: normal
+}
+.hand {
+	CURSOR: hand
+}
+.hand_ {
+	CURSOR: hand; TEXT-DECORATION: underline
+}
+.cell_border {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #555555 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #555555 1px solid; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.cell_border_top {
+	BORDER-TOP: #555555 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #555555 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #555555 1px solid; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.cell_border_top_right {
+	BORDER-RIGHT: #555555 1px solid; BORDER-TOP: #555555 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #555555 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #555555 1px solid; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.cell_border_right {
+	BORDER-RIGHT: #555555 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #555555 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #555555 1px solid; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.padding {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.back {
+	BACKGROUND: url(../image/login.gif) #ffffff no-repeat left top
+}
+A.link_000000 {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.link_000000:hover {
+	COLOR: darkblue; TEXT-DECORATION: underline
+}
+A.link_ffffff {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.link_ffffff:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.justify {
+	FONT-SIZE: 9pt; COLOR: #666666; FONT-FAMILY: ""; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #aaaaaa 1px solid; LINE-HEIGHT: 14pt; BORDER-BOTTOM: #aaaaaa 1px solid; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+A.link3_sch {
+	FONT-SIZE: 9pt; COLOR: #000099; LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+A.link3_sch:visited {
+	FONT-SIZE: 9pt; COLOR: midnightblue; LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+A.link3_sch:active {
+	FONT-SIZE: 9pt; COLOR: midnightblue; LINE-HEIGHT: normal; TEXT-DECORATION: none
+}
+A.link3_sch:hover {
+	FONT-SIZE: 9pt; COLOR: firebrick; LINE-HEIGHT: normal; TEXT-DECORATION: underline
+}
+A.linkfolder {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A.linkfolder:active {
+	FONT-SIZE: 9pt; COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.linkmenu {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A.linkmenu:active {
+	FONT-SIZE: 9pt; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.link3 {
+	FONT-SIZE: 9pt; COLOR: #000099; TEXT-DECORATION: none
+}
+A.link3:visited {
+	FONT-SIZE: 9pt; COLOR: midnightblue; TEXT-DECORATION: none
+}
+A.link3:active {
+	FONT-SIZE: 9pt; COLOR: midnightblue; TEXT-DECORATION: none
+}
+A.link3:hover {
+	FONT-SIZE: 9pt; COLOR: firebrick; TEXT-DECORATION: underline
+}
+.text000000 {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: ""; TEXT-DECORATION: none
+}
+.textffffff {
+	FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: ""; TEXT-DECORATION: none
+}
+A.link4 {
+	COLOR: #01b01e
+}
+.new {
+	BACKGROUND-COLOR: #efefef
+}
+.old {
+	BACKGROUND-COLOR: #ffffff
+}
+.Dotum {
+	FONT-FAMILY: "dotum"
+}
+.tdCenter {
+	VERTICAL-ALIGN: middle; HEIGHT: 23px; TEXT-ALIGN: center
+}
+.tdLeft {
+	VERTICAL-ALIGN: middle; HEIGHT: 23px; TEXT-ALIGN: left
+}
+.DgStyle {
+	TABLE-LAYOUT: fixed
+}
+.DgRow {
+	OVERFLOW: hidden; TEXT-OVERFLOW: ellipsis
+}

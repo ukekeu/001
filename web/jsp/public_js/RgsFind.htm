@@ -1,0 +1,63 @@
+<div id="FinC" style="position:absolute; left:10px; top:10px; width:650px; height:50px; z-index:1; visibility: hidden"> 
+<!--区域: 
+       <select name="Region" style="border-style: solid; border-width: 1">
+	-->
+		<%
+		 /*   
+  	
+     sql="select type,codename from CODE where Type='K' order by type";
+	 String Area_Name="";
+	 String Area_Type="";
+     ResultSet rsR=ViewBean.executeQuery(sql);
+     while (rsR.next()){
+		Area_Type=getbyte(rsR.getString("type"));
+		Area_Name=getbyte(rsR.getString("codename"));
+	   */ %> 
+      <!-- <option value=<%//=Area_Type+"*"+ Area_Name%>><%//=Area_Name %></option>-->
+    <%//}
+    //rsR.close();
+   %>
+	<!--</select>-->
+	<input type=hidden name=SectionName  value=<%=SectionName %>>
+楼盘<select name="SecNo"  onchange="changeSection();FindArry();"> <option value=""></option> 
+<%
+    String SectionS=(String)session.getAttribute("Section");						
+	sql="select SerialNo,Name from Section where SerialNo in("+SectionS+")";
+    ResultSet secRs=ViewBean.executeQuery(sql);
+    while (secRs.next()){
+	   String no=secRs.getString("SerialNo");
+	   
+	   String sec=getbyte(secRs.getString("Name"));
+     	out.print("<option value='"+no+"'>"+sec+"</option>");
+	  }
+	    secRs.close();
+		String Sql="";
+     %> </select>
+	 <%@ include file="../public_js/selectSRB.jsp"%>
+	 房号<input type=text size=5 name=RoomNo>
+	 户型<select name="fx"> 
+	 <option></option>
+         <%
+		 sql="select CODENAME from CODE WHERE TYPE='A'";
+       ResultSet TRs=ViewBean.executeQuery(sql);
+       while (TRs.next()){
+	   String no=getbyte(TRs.getString("CODENAME"));
+	
+     	out.print("<option value='"+no+"'>"+no+"</option>");
+	  }
+	    TRs.close();
+		  %>   
+</select>
+<br>
+	 签定日期:
+	  <INPUT TYPE=TEXT NAME=Date1 size=10><input type=button name=cale value=".." onclick="fPopUpCalendarDlg(Date1);return false;">--><INPUT TYPE=TEXT NAME=Date2 size=10><input type=button name=cale value=".." onclick="fPopUpCalendarDlg(Date2);return false;">
+	 付款方式<select name="pay" > 
+<option></option>
+
+ <%
+ 	out.println(getbyte(commonListBean.getList(ViewBean,"PayName","PayName"," from PayMent")));
+ 
+     %> </select><input type=submit name="FindSection" value="查询">
+
+
+</div>

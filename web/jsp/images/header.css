@@ -1,0 +1,15 @@
+TD.tabMiddle {
+	WIDTH: 28px; CURSOR: hand; HEIGHT: 29px; align: center
+}
+TD.tabMix {
+	WIDTH: 23px; HEIGHT: 29px
+}
+TD.tabFirst {
+	WIDTH: 23px; HEIGHT: 29px
+}
+TD.tabLast {
+	WIDTH: 23px; HEIGHT: 29px
+}
+TABLE.moduleNameTable {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; VISIBILITY: hidden; BORDER-LEFT: 1px; WIDTH: 150px; BORDER-BOTTOM: 1px; POSITION: absolute; TOP: 5px
+}

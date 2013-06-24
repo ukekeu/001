@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<!-- a tab library descriptor -->
+
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>java</shortname>
+  <info>
+	sample 
+  </info>
+    
+  <!-- list tags -->
+  <tag>
+    <name>roomPart</name>
+    <tagclass>common.RoomPartTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>lines</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>section</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>building</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>category</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+<tag>
+    <name>hirelessRoomPart</name>
+    <tagclass>common.HirelessRoomPartTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>lines</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>section</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>building</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>roomType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>area</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+   
+  </tag>
+  
+  <tag>
+    <name>shouldRentPart</name>
+    <tagclass>common.ShouldRentPartTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag
+    </info>
+ 
+    <!-- no default -->
+       
+    <attribute>
+      <name>section</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>building</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>room</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>year</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>	
+    
+     <attribute>
+      <name>month</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>get</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>	
+   
+  </tag>
+  
+  <tag>
+    <name>hiredRoomPart</name>
+    <tagclass>common.HiredRoomPartTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>lines</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>section</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>building</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>roomType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>area</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+ 
+  </tag>
+
+<tag>
+    <name>rentPart</name>
+    <tagclass>common.RentPartTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>room</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>section</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>building</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+ 
+  </tag>
+
+  <tag>
+    <name>productItemList</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.list.ProductItemListTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag that implements a list of items associated with a product
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>numItems</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>startIndex</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <!-- default is "Product List is Empty" -->
+    <attribute>
+      <name>emptyList</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>productId</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+  </tag>
+
+  <tag>
+    <name>productItemAttribute</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.list.ProductItemAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      A tag to print out attributes of a Product Item object.  It should appear
+      in an items tag.  Depending on the value of the attribute specified,
+      a different string is printed.  Possible values are "name", "id", "productId",
+      "unitcost", "listcost", "productAttribute" and "description".
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>myList</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.list.MyListTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag that implements a my list, fetching a list from the
+      ProfileMgrWebImpl bean using the given number of items and starting
+      index.  Should appear only in pages in which the ProfileMgrWebImpl bean
+      is being used. 
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>numItems</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>startIndex</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>items</name>
+    <tagclass>common.ItemsTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      The inner tag in a list tag in which the items actually appear.  The
+      body of this tag is processed once for each item actually in the list.
+      This tag merely keeps a copy of the current item for the inner tags to
+      refer to.  Must appear in a list tag.
+    </info>
+  </tag>
+
+  <tag>
+    <name>roomAttribute</name>
+    <tagclass>common.RoomAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      A tag to print out attributes of a Product object.  It should appear
+      in an items tag.  Depending on the value of the attribute specified,
+      a different string is printed.  Possible values are "name", "id",
+      and "description".
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>rentAttribute</name>
+    <tagclass>common.RentAttribute</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      A tag to print out attributes of a Product object.  It should appear
+      in an items tag.  Depending on the value of the attribute specified,
+      a different string is printed.  Possible values are "name", "id",
+      and "description".
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>shouldRentAttribute</name>
+    <tagclass>common.ShouldRentAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>hirelessRoomAttribute</name>
+    <tagclass>common.HirelessRoomAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      A tag to print out attributes of a Product object.  It should appear
+      in an items tag.  Depending on the value of the attribute specified,
+      a different string is printed.  Possible values are "name", "id",
+      and "description".
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>hiredRoomAttribute</name>
+    <tagclass>common.HiredRoomAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      A tag to print out attributes of a Product object.  It should appear
+      in an items tag.  Depending on the value of the attribute specified,
+      a different string is printed.  Possible values are "name", "id",
+      and "description".
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>pageNav</name>
+    <tagclass>common.PageNavTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      Prints out a form which, when submitted will reload the page, with
+      the list displaying the next bunch of items.  The action attribute
+      should be set to the url recognized by the requestmappings.xml file
+      as the current page, e.g. "editaccount" (not the actual path, e.g. 
+      editaccount.jsp).  Should appear in a list tag.  The body shouldn't
+      be processed if there are no more items to fetch (sort of works right
+      now but not quite).
+    </info>
+
+    <!-- no default -->
+    <attribute>
+      <name>page</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>condition</name>
+    <tagclass>common.ConditionTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+          now but not quite).
+    </info>
+  
+  </tag>
+  
+  <tag>
+    <name>conditionDate</name>
+    <tagclass>common.ConditionDateTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+          now but not quite).
+    </info>
+  
+  </tag>
+  
+  <tag>
+    <name>conditionSearch</name>
+    <tagclass>common.ConditionSearchTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+          now but not quite).
+    </info>
+  
+  </tag>
+  
+  <tag>
+    <name>date</name>
+    <tagclass>common.DateTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+          now but not quite).
+    </info>
+    <attribute>
+    	<name>days</name>
+    	<required>false</required>
+    </attribute>
+    <attribute>
+    	<name>name</name>
+    	<required>true</required>
+    </attribute>		
+  </tag>
+  
+  <tag>
+    <name>date2</name>
+    <tagclass>common.Date2Tag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+          now but not quite).
+    </info>
+    <attribute>
+    	<name>type</name>
+    	<required>false</required>
+    </attribute>
+    <attribute>
+    	<name>name</name>
+    	<required>true</required>
+    </attribute>		
+  </tag>
+  
+  <tag>
+    <name>select</name>
+    <tagclass>common.SelectTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+          now but not quite).
+    </info>
+    <attribute>
+    	<name>index</name>
+    	<required>true</required>
+    </attribute>
+    <attribute>
+    	<name>name</name>
+    	<required>true</required>
+    </attribute>	
+    <attribute>
+    	<name>codeName</name>
+    	<required>true</required>
+    </attribute>
+    <attribute>
+    	<name>valueName</name>
+    </attribute>	
+  
+  </tag>
+
+  <tag>
+    <name>prevForm</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.list.PrevFormTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      Similar to a nextForm tag, but loads the page with the previous bunch
+      of items.  The body won't be processed if the list is at the beginning.
+    </info>
+
+    <!-- no default -->
+    <attribute>
+      <name>action</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <!-- cart tag -->
+  <tag>
+    <name>cart</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.list.CartListTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+      A tag that implements a my list, fetching a shopping cart list from the
+      ShoppingCartWebImpl bean using the given number of items and starting
+      index. 
+    </info>
+ 
+    <!-- no default -->
+    <attribute>
+      <name>numItems</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      
+    <!-- default is 1 -->
+    <attribute>
+      <name>startIndex</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <!-- Message displayed when shopping cart is empty -->
+    <attribute>
+      <name>cartEmptyMessage</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>cartAttribute</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.list.CartItemAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      A tag to print out attributes of a CartItem object.  It should appear
+      in an items tag.  Depending on the value of the attribute specified,
+      a different string is printed.  Possible values are "name", "itemid",
+      and "productid", "attribute", "quantity", "unitcost", "totalcost".
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>true</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>false</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <name>productDetails</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.ProductDetailsTag</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+    </info>
+  </tag>
+
+  <tag>
+    <name>prodDetailsAttr</name>
+    <tagclass>com.sun.j2ee.blueprints.petstore.taglib.ProductDetailsAttributeTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+    </info>
+
+    <!-- default is "name" -->
+    <attribute>
+      <name>attribute</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+</taglib>
+

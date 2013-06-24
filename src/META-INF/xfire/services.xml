@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+
+  <service>   
+    <name>callback</name>   
+    <namespace>http://xfire.codehaus.org/config/1.0</namespace>   
+    <serviceClass>com.sztelecom.vabd.zytx.CallBack</serviceClass>
+  </service>  
+    
+  <service>   
+    <name>callbackfax</name>   
+    <namespace>http://xfire.codehaus.org/config/1.0</namespace>   
+    <serviceClass>com.sztelecom.vabd.zytx.CallBackFax</serviceClass>
+  </service>  
+  
+</beans>

@@ -1,0 +1,270 @@
+#calendar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-COLLAPSE: collapse; border-spacing: 0px
+}
+#calendar TR.header TH {
+	COLOR: #ffffff; BACKGROUND-COLOR: #008080; TEXT-ALIGN: center
+}
+#calendar TR.days TH {
+	WIDTH: 1.8em; BACKGROUND-COLOR: #80c0c0; TEXT-ALIGN: center
+}
+#calendar TR.footer TD {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; PADDING-BOTTOM: 4px; BORDER-LEFT: medium none; PADDING-TOP: 6px; BORDER-BOTTOM: medium none
+}
+#calendar TD {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 0.25em; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 0.25em; PADDING-BOTTOM: 2px; BORDER-LEFT: #000000 1px solid; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #000000 1px solid; empty-cells: show
+}
+#calendar TH {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 0.25em; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 0.25em; PADDING-BOTTOM: 2px; BORDER-LEFT: #000000 1px solid; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #000000 1px solid; empty-cells: show
+}
+#calendar TD {
+	TEXT-ALIGN: right
+}
+#calendar TD.weekend {
+	BACKGROUND-COLOR: #e0f0f0
+}
+#calendar TD.target {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ffffe0
+}
+#calendar A {
+	COLOR: #008080; TEXT-DECORATION: none
+}
+#calendar A:visited {
+	COLOR: #008080; TEXT-DECORATION: none
+}
+#calendar A:hover {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+#calendar A.button {
+	BORDER-RIGHT: #509090 2px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #a0e0e0 2px solid; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; FONT-SIZE: 80%; PADDING-BOTTOM: 2px; BORDER-LEFT: #a0e0e0 2px solid; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #509090 2px solid; BACKGROUND-COLOR: #80c0c0; TEXT-DECORATION: none
+}
+#calendar A.button:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+#calendar A.button:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+BODY {
+	MARGIN: 0px; BACKGROUND-COLOR: white
+}
+BODY.calendar {
+	FONT-SIZE: 10pt; BACKGROUND-COLOR: menu
+}
+BODY.module {
+	MARGIN: 0px; BACKGROUND-COLOR: #eaeaf9
+}
+BODY.mainForm {
+	MARGIN: 0px; BACKGROUND-COLOR: white
+}
+BODY.loginForm {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: white
+}
+BODY.logoutForm {
+	BACKGROUND-COLOR: white
+}
+#moduleMenu {
+	MARGIN: 0px; BACKGROUND-COLOR: #ebf4ff
+}
+#moduleMenu SPAN:unknown {
+	BACKGROUND-COLOR: blue
+}
+#moduleMenu TD {
+	FONT-SIZE: 10pt; COLOR: white
+}
+#moduleMenu A {
+	FONT-SIZE: 10pt; COLOR: white
+}
+#tree {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif; BACKGROUND-COLOR: white
+}
+#tree A {
+	COLOR: black; TEXT-DECORATION: none
+}
+#tree A:hover {
+	COLOR: #000080; TEXT-DECORATION: underline
+}
+#tree TABLE {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; BORDER-BOTTOM: 1px
+}
+#tree DIV {
+	PADDING-TOP: 2px
+}
+.screenCaption {
+	FONT-SIZE: 110%; COLOR: blue
+}
+TABLE.searchCaption {
+	WIDTH: 100%; FONT-FAMILY: Arial; font-szie: 10pt
+}
+TD.scrollButton {
+	FONT-SIZE: 70%; CURSOR: hand; COLOR: red
+}
+.headTable {
+	FONT-WEIGHT: lighter; FONT-SIZE: 10pt; COLOR: #000000
+}
+TH.groupDN {
+	PADDING-LEFT: 10px; COLOR: #ffff00; HEIGHT: 26px
+}
+TR.alternateRow {
+	BACKGROUND-COLOR: #f6f6f6
+}
+TD.alignCaption {
+	FONT-SIZE: 10pt; WIDTH: 120px; TEXT-ALIGN: right
+}
+TD.searchAlignCaption {
+	PADDING-LEFT: 40px; FONT-SIZE: 10pt; WIDTH: 70px; TEXT-ALIGN: left
+}
+A.line:visited {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A.line:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+A.line:link {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A.line:active {
+	TEXT-DECORATION: none
+}
+.inlineHelpText {
+	FONT-SIZE: 80%; COLOR: #dd6600
+}
+.button {
+	BORDER-RIGHT: 1px; BORDER-TOP: 0px; OVERFLOW: visible; BORDER-LEFT: 0px; WIDTH: 52px; CURSOR: hand; BORDER-BOTTOM: 1px; HEIGHT: 27px
+}
+.buttonUp {
+	BORDER-RIGHT: 1px; BORDER-TOP: 0px; OVERFLOW: visible; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 1px; HEIGHT: 27px
+}
+.buttonDown {
+	BORDER-RIGHT: 1px; BORDER-TOP: 0px; OVERFLOW: visible; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 1px; HEIGHT: 27px
+}
+INPUT.stdFormTopButton {
+	BORDER-RIGHT: #b5b7b8 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #b5b7b8 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 9pt; BORDER-LEFT: #b5b7b8 1px solid; COLOR: #000; MARGIN-RIGHT: 0px; BORDER-BOTTOM: #b5b7b8 1px solid; FONT-FAMILY: verdana; HEIGHT: 20px; BACKGROUND-COLOR: #f1f2f4; font-align: center; align: center
+}
+INPUT.stdFormTopButton:hover {
+	BORDER-RIGHT: #b5b7b8 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #b5b7b8 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 9pt; BORDER-LEFT: #b5b7b8 1px solid; COLOR: #000; MARGIN-RIGHT: 0px; BORDER-BOTTOM: #b5b7b8 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #fafbfc; font-align: center; align: center
+}
+INPUT.stdFormBotButton {
+	BORDER-RIGHT: #b5b7b8 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #b5b7b8 1px solid; MARGIN-TOP: 3px; PADDING-LEFT: 4px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 3px; BORDER-LEFT: #b5b7b8 1px solid; COLOR: #000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #b5b7b8 1px solid; FONT-FAMILY: verdana; HEIGHT: 20px; BACKGROUND-COLOR: #f1f2f4; font-align: center; align: center
+}
+INPUT.stdFormBotButton:hover {
+	BORDER-RIGHT: #b5b7b8 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #b5b7b8 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 9pt; BORDER-LEFT: #b5b7b8 1px solid; COLOR: #000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #b5b7b8 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #fafbfc; font-align: center; align: center
+}
+INPUT.stdFormSearchButton {
+	BORDER-RIGHT: #b5b7b8 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #b5b7b8 1px solid; MARGIN-TOP: 3px; PADDING-LEFT: 4px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 3px; BORDER-LEFT: #b5b7b8 1px solid; COLOR: #000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #b5b7b8 1px solid; FONT-FAMILY: verdana; HEIGHT: 20px; BACKGROUND-COLOR: #f1f2f4; font-align: center; align: center
+}
+INPUT.stdFormSearchButton:hover {
+	BORDER-RIGHT: #b5b7b8 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #b5b7b8 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 9pt; BORDER-LEFT: #b5b7b8 1px solid; COLOR: #000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #b5b7b8 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #fafbfc; font-align: center; align: center
+}
+#buttonBar {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; MARGIN-LEFT: 9px; BORDER-LEFT: 0px; WIDTH: 98%; CURSOR: default; BORDER-BOTTOM: 0px; HEIGHT: 30px
+}
+#buttonBar TD {
+	FONT: menu; HEIGHT: 20px
+}
+#outerDiv {
+	OVERFLOW: auto; WIDTH: 100%; BOTTOM: 0px; POSITION: absolute; HEIGHT: 95%
+}
+.inputYear {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 35px; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.inputDate {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 67px; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.inputDatetime {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 40px; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.inputNumeric {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: right
+}
+.inputEnum {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 150px; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.inputEnumAuto {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.inputString {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.textArea {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; COLOR: #0066cc; BORDER-BOTTOM: #7f9db9 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.searchRefValueTable {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9pt; MARGIN-LEFT: 1px; BORDER-LEFT: 0px; COLOR: #0066cc; BORDER-BOTTOM: 0px; HEIGHT: 22px; BACKGROUND-COLOR: #7f9db9
+}
+#progress {
+	Z-INDEX: 1; MARGIN: auto; WIDTH: 180px
+}
+#progressBox {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 0px; Z-INDEX: 3; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: 1px solid; HEIGHT: 17px; BACKGROUND-COLOR: #cccce6; TEXT-ALIGN: left
+}
+#progressBar {
+	Z-INDEX: 4; BACKGROUND: #ebf4ff; WIDTH: 0%; HEIGHT: 100%
+}
+#progressTxt {
+	MARGIN-TOP: -14px; Z-INDEX: 5; FONT: 11px Verdana,Geneva,sans-serif; COLOR: blue
+}
+.edoTableHeader {
+	BACKGROUND: #ebeced
+}
+.advanceSearchEnum {
+	BORDER-TOP-WIDTH: 2px; BORDER-LEFT-WIDTH: 2px; BORDER-LEFT-COLOR: #f0f0fa; BORDER-BOTTOM-WIDTH: 2px; BORDER-BOTTOM-COLOR: #f0f0fa; BORDER-TOP-COLOR: #f0f0fa; BORDER-RIGHT-WIDTH: 2px; BORDER-RIGHT-COLOR: #f0f0fa
+}
+.itemTitle {
+	FONT-SIZE: 10pt; COLOR: navy
+}
+.smallFont {
+	FONT-SIZE: 9pt
+}
+DIV.popBox {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 1px solid; PADDING-LEFT: 0px; Z-INDEX: 2; FILTER: progid:DXImageTransform.Microsoft.shadow(Positive='true', enabled='true', direction='135'); PADDING-BOTTOM: 0px; OVERFLOW: auto; BORDER-LEFT: black 1px solid; WIDTH: 300px; PADDING-TOP: 0px; BORDER-BOTTOM: black 1px solid; POSITION: absolute; HEIGHT: 350px; BACKGROUND-COLOR: #ffffdc
+}
+INPUT.stdFormButton {
+	BORDER-RIGHT: #808080 1px solid; BORDER-TOP: white 2px solid; MARGIN-TOP: 3px; FONT-SIZE: 75%; MARGIN-BOTTOM: 3px; BORDER-LEFT: white 2px solid; COLOR: black; BORDER-BOTTOM: #a0a0a0 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f0f0f0
+}
+.stdBoxTitle {
+	PADDING-BOTTOM: 5px; WIDTH: 100%; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: #31619c
+}
+INPUT.stdButton {
+	BORDER-RIGHT: #b0b0b0 1px solid; BORDER-TOP: #f0f0f0 1px solid; FONT-SIZE: 90%; BORDER-LEFT: #f0f0f0 1px solid; COLOR: #202020; BORDER-BOTTOM: #b0b0b0 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #e0e0f0
+}
+TD.bottomLine {
+	BORDER-BOTTOM: #417096 1px solid
+}
+.refLink {
+	FONT-WEIGHT: lighter; CURSOR: hand; COLOR: blue; TEXT-DECORATION: underline
+}
+TR.topValign {
+	valign: top
+}
+TD.labelTd {
+	PADDING-LEFT: 10px; FONT-SIZE: 9pt; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: left; F0F0F0: 
+}
+TD.valueTd {
+	BACKGROUND-COLOR: white
+}
+.point9 {
+	FONT-SIZE: 9pt
+}
+.menuEn {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; CURSOR: hand; COLOR: #000000; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+FONT.topicStyle {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; TEXT-DECORATION: underline
+}
+INPUT.blueButton {
+	BORDER-RIGHT: #89a5e6 1px solid; BORDER-TOP: #89a5e6 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #89a5e6 1px solid; COLOR: #0066cc; BORDER-BOTTOM: #89a5e6 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+#about {
+	BACKGROUND-COLOR: #008080
+}
+DIV.expandedBox {
+	BORDER-RIGHT: #0080c0 5px solid; BORDER-TOP: #0080c0 5px solid; BORDER-LEFT: #0080c0 5px solid; BORDER-BOTTOM: #0080c0 5px solid
+}
+.cmdLink {
+	FONT-SIZE: 9pt; CURSOR: hand
+}
+.cmdLinkImage {
+	VERTICAL-ALIGN: top; WIDTH: 19px; HEIGHT: 19px
+}
+.valueLink {
+	FONT-SIZE: 9pt
+}

@@ -1,0 +1,23 @@
+
+a:link {color: #285151; text-decoration: none}
+a:visited { text-decoration:none}
+a:hover { color: #FF0000;; text-decoration:underline }
+A {	COLOR: #000080; TEXT-DECORATION: none }
+td.tdred {border-color:ff0000;border-top-width:1;border-top-style:solid;border-left-width:1;
+		border-left-style:solid }
+td {font-family:宋体;font-size:13} 
+.tablefill2 { border-top-width:0px;border-top-style:none;border-left-width:0px;border-left-style:none,border-right-width:0px;border-right-style:none }
+
+.tablefill { border-top-width:1px;border-top-style=solid;border-left-width:1px;border-left-style=solid }
+.tablefill td { font-family:宋体; font-size:13; text-decrotion:none;align:center;border-bottom-width:1px;border-bottom-style=solid;border-right-width:1px;border-right-style=solid }
+.tablenull {border-top-width:0;border-left-width:0 }
+
+//table {border-width:1;border-style:solid;border-bottom-style:none;border-right-style:none"}
+//table.tablenone {border-width:0;border-style:none}
+.tablenone td {font-size:42;border-bottom-style:none;border-bottom-width:1 }
+
+.tablelist td {font-family:宋体;font-size:7} 
+
+td.tdred {border-color:ff0000;border-top-width:1;border-top-style:solid;border-left-width:1 }
+A {	COLOR: #000080; TEXT-DECORATION: none }td { font-family:宋体; font-size:13; text-decrotion:none;align:center }
+

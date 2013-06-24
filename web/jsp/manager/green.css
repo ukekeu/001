@@ -1,0 +1,23 @@
+body { font-size: 12px; line-height: 150%; cursor: default; margin: 0 }
+table { font-size: 12px; line-height: 150% }
+a:link, a:visited, a:active { color: #00319C; text-decoration: none }
+a:hover { color: red; text-decoration: underline }
+input, select { font-size: 12px }
+textarea { font-size: 12px; font-family: ËÎÌו }
+.listtitle { color: #FFFFFF; font-weight: bold; background-color: #396BA5 }
+.listbody { color: #9C6331; background-color: #F7F7F7 }
+.maintable { background-color: #1E3957; border: 6 solid #D6D6D6; width: 100% }
+.outtable { border-left: 1 solid #000000; border-right: 1 solid #000000; background-color: #D6D6D6; width: 760 }
+.outtd { border-left: 1 solid #FFFFFF; border-top: 1 solid #FFFFFF; border-bottom: 1 solid #808080 }
+.endtd { border-left: 1 solid #FFFFFF; border-top: 1 solid #FFFFFF; padding-right: 12 }
+.shadow1 { filter: dropshadow(color=#AAAAAA, offx=1, offy=1) }
+.Titletd {border-left: 1 solid #73C173; border-right: 1 solid #035203; border-top: 1 solid #73C173; border-bottom: 1 solid #035203; background-color: #089a08}
+.Titletd1 {border-left: 1 solid #73C173; border-right: 1 solid #035203; border-top: 1 solid #73C173; border-bottom: 1 solid #035203;}
+.include1 {border-left: 1 solid #73C173; border-right: 1 solid #035203; border-top: 1 solid #73C173; border-bottom: 1 solid #035203; background-color: #009B00}
+.textcolor1 {color: #035203}
+.textcolor2 {color: #D8E7D8}
+.bgcolor1 {background-color: #035203}
+.bgcolor2 {background-color: #78AD78}
+.bgcolor3 {background-color: #D8E7D8}
+.bgcolor4 {background-color: #089A08}
+.bgcolor5 {background-color: #D8E7D8}

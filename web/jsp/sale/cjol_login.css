@@ -1,0 +1,118 @@
+INPUT {
+	BORDER-RIGHT: #d9dee6 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #8e9db5 1px solid; PADDING-LEFT: 1px; BACKGROUND: #ffffff; PADDING-BOTTOM: 1px; FONT: 12px 宋体; BORDER-LEFT: #8e9db5 1px solid; COLOR: #333333; PADDING-TOP: 1px; BORDER-BOTTOM: #d9dee6 1px solid
+}
+SELECT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #ffffff; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px 宋体; WIDTH: 200px; COLOR: #333333; PADDING-TOP: 0px
+}
+OPTION {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px 宋体; PADDING-TOP: 0px
+}
+TEXTAREA {
+	BORDER-RIGHT: #cbd8e4 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #a5bbd1 1px solid; PADDING-LEFT: 1px; BACKGROUND: #ffffff; PADDING-BOTTOM: 1px; MARGIN: 0px; FONT: 12px 宋体; BORDER-LEFT: #a5bbd1 1px solid; WIDTH: 200px; COLOR: #333333; PADDING-TOP: 0px; BORDER-BOTTOM: #cbd8e4 1px solid
+}
+.formtextfield {
+	FONT-SIZE: 11px; FONT-FAMILY: "tahoma"
+}
+INPUT.checkbox {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+INPUT.radio {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.MyAccountInfo {
+	Z-INDEX: 110; BACKGROUND: white; WIDTH: 580px; POSITION: relative
+}
+.Train {
+	Z-INDEX: 110; BACKGROUND: white; WIDTH: 337px; POSITION: relative
+}
+.MyAccountInfo TABLE {
+	COLOR: black
+}
+.MainTable {
+	WIDTH: 780px
+}
+.Space {
+	WIDTH: 10px
+}
+.CjolHome {
+	OVERFLOW-Y: auto; OVERFLOW-X: hidden; POSITION: absolute; TOP: 27px
+}
+.cjol1 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #ffffff 1px solid; DISPLAY: inline; FLOAT: left; BORDER-LEFT: #ffffff 1px solid; WIDTH: 60px; CURSOR: hand; BORDER-BOTTOM: 0px solid; POSITION: relative; TOP: 2px; HEIGHT: 16px; BACKGROUND-COLOR: #edf1f3
+}
+.cjol2 {
+	BORDER-RIGHT: #666666 1px solid; BACKGROUND-POSITION: left top; BORDER-TOP: #ffffff 1px solid; Z-INDEX: 3; BORDER-LEFT: #ffffff 1px solid; WIDTH: 61px; CURSOR: hand; BORDER-BOTTOM: 0px solid; BACKGROUND-REPEAT: no-repeat; POSITION: relative; TOP: 1px; HEIGHT: 19px; BACKGROUND-COLOR: #edf1f3
+}
+.cjol3 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #edf1f3; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #edf1f3; align: center; valign: top
+}
+.cjol4 {
+	BORDER-RIGHT: #666666 1px solid; WIDTH: 61px; HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.cjol5 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 62px; HEIGHT: 1px; BACKGROUND-COLOR: #edf1f3
+}
+ 
+#toolbar {
+	FONT: 12px 宋体; COLOR: #eaf0f7
+}
+BODY {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; SCROLLBAR-FACE-COLOR: #a5bbd1; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px 宋体; OVERFLOW: hidden; BORDER-LEFT: 0px; SCROLLBAR-SHADOW-COLOR: #a5bbd1; SCROLLBAR-3DLIGHT-COLOR: #c5dbf1; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #eef0f2
+}
+.Ltable TD {
+	BORDER-BOTTOM: #eeeeee 1px solid
+}
+.blackb8 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.black8 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.Header {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.btn {
+	BORDER-RIGHT: #4b6f89 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: buttonhighlight 1px solid; PADDING-LEFT: 5px; FONT: 12px 宋体; BORDER-LEFT: buttonhighlight 1px solid; CURSOR: hand; COLOR: #ffffff; BORDER-BOTTOM: #4b6f89 1px solid; HEIGHT: 21px; BACKGROUND-COLOR: #739dbf; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.btn_toolbar {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; HEIGHT: 21px; BACKGROUND-COLOR: buttonface
+}
+.btn1 {
+	BORDER-RIGHT: #4b6f89 1px solid; BORDER-TOP: buttonhighlight 1px solid; FONT: 12px 宋体; BORDER-LEFT: buttonhighlight 1px solid; CURSOR: hand; COLOR: #ffffff; BORDER-BOTTOM: #4b6f89 1px solid; HEIGHT: 21px; BACKGROUND-COLOR: #739dbf; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.SectionHeader {
+	BORDER-RIGHT: #ff9a00 2px solid; BORDER-TOP: #ff9a00 2px solid; FONT: 12px 宋体; BORDER-LEFT: #ff9a00 2px solid; BORDER-BOTTOM: #ff9a00 2px solid; BACKGROUND-COLOR: white; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+FIELDSET {
+	BORDER-RIGHT: #aebcc8 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #aebcc8 1px solid; PADDING-LEFT: 10px; Z-INDEX: 90; PADDING-BOTTOM: 10px; MARGIN: 0px 10px 10px; FONT: 12px 宋体; BORDER-LEFT: #aebcc8 1px solid; COLOR: #000000; PADDING-TOP: 10px; BORDER-BOTTOM: #aebcc8 1px solid
+}
+.menuBottom {
+	BACKGROUND: buttonshadow; OVERFLOW: hidden; WIDTH: 100%; TOP: 16px; HEIGHT: 1px
+}
+.tablelistbg {
+	BACKGROUND-COLOR: #d4d0c8
+}
+.tabletdlist {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; PADDING-LEFT: 2px; FONT: 12px 宋体; BORDER-LEFT: buttonhighlight 1px solid; CURSOR: default; PADDING-TOP: 3px; BORDER-BOTTOM: buttonshadow 1px solid
+}
+LEGEND {
+	FONT: 12px 宋体
+}
+TD {
+	FONT: 12px 宋体
+}
+TD.sort {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 1px; FONT: menu; COLOR: windowtext; PADDING-TOP: 1px; borderColorLight: #ffffff; borderColorDark: #c0c0c0
+}
+TABLE.sort {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 0px solid; MARGIN: 0px; FONT: 12px 宋体; BORDER-LEFT: buttonshadow 0px solid; BORDER-BOTTOM: buttonhighlight 0px solid; BACKGROUND-COLOR: #d4d0c8; borderColorLight: #ffffff; borderColorDark: #c0c0c0
+}
+THEAD TD {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; FONT: menu; BORDER-LEFT: buttonhighlight 1px solid; CURSOR: default; PADDING-TOP: 0px; BORDER-BOTTOM: buttonshadow 1px solid; HEIGHT: 16px
+}
+THEAD .arrow {
+	PADDING-RIGHT: 0px; MARGIN-TOP: -3px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; FONT: 12px 宋体; OVERFLOW: hidden; WIDTH: 10px; COLOR: black; PADDING-TOP: 0px; HEIGHT: 11px
+}
+.gopagebutton {
+	BORDER-RIGHT: #709dbe 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #e0eaf1 1px solid; PADDING-LEFT: 0px; BACKGROUND: #b0c9db; PADDING-BOTTOM: 0px; FONT: 11px arial; BORDER-LEFT: #e0eaf1 1px solid; WIDTH: 30px; COLOR: #2b4960; PADDING-TOP: 0px; BORDER-BOTTOM: #709dbe 1px solid; HEIGHT: 19px
+}
