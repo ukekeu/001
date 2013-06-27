@@ -11,6 +11,8 @@ import java.net.URL;
 import java.sql.*;
 import java.util.Properties;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,8 +40,7 @@ public class SDatabase {
 		try {
 			properties.load(inputstream);
 		} catch (Exception exception) {
-			logger.error((new StringBuilder())
-					.append(exception.getMessage())
+			logger.error((new StringBuilder()).append(exception.getMessage())
 					.append("can't   read   the   file").toString());
 		}
 		user = properties.getProperty("DataSource.user");
@@ -126,16 +127,53 @@ public class SDatabase {
 		mailhandler.send();
 	}
 
-	public void closeConn() throws SQLException {
+	public void closeConn() {
 		if (conn == null) {
 			return;
 		} else {
 			logger.debug("close connection:" + conn);
-			conn.close();
+			try {
+				conn.close();
+			} catch (SQLException e) {
+			}
 			conn = null;
 			stmt = null;
 			return;
 		}
+	}
+
+	public static void closeConn(ResultSet rs, Statement st, Connection conn) {
+		if (rs != null) {
+			try {
+				if (!rs.isClosed()) {
+					rs.close();
+				}
+			} catch (SQLException e) {
+			}
+		}
+
+		if (st != null) {
+			try {
+				if (!st.isClosed()) {
+					st.close();
+				}
+			} catch (SQLException e) {
+			}
+		}
+
+		if (conn != null) {
+			try {
+				logger.debug("close connection:" + conn);
+				if (!conn.isClosed()) {
+					conn.close();
+				}
+			} catch (SQLException e) {
+			}
+		}
+
+		conn = null;
+		st = null;
+		rs = null;
 	}
 
 	String sDBDriver;
